@@ -156,7 +156,7 @@ class Calculator(tk.Tk):
             total = calculate_with_polish(self.__numbers, self.__operations)
             if total == int(total):
                 total = int(total)
-            self.__numbers = [total]
+            self.__numbers = []
             self.__operations = []
             self.__current_num.set(str(total))
             self.__top_output.config(text="")
